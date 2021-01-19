@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>My Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    
+    <script defer src="{% static 'fontawesome/js/all.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">   
+    
+    <link rel="stylesheet" href="{% static 'plugins/github-calendar/dist/github-calendar.css' %}">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="{% static 'plugins/github-activity/github-activity-0.1.5.min.css' %}">
+    
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link id="theme-style" rel="stylesheet" href="{% static 'css/zoom.css' %}">
+</head> 
+
+<body>
+    {% block content %}{% endblock %}
+    
+    <!-- Javascript -->          
+    <script type="text/javascript" src="{% static 'plugins/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/popper.min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>    
+    <script type="text/javascript" src="{% static 'plugins/jquery-rss/dist/jquery.rss.min.js' %}"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="{% static 'plugins/github-calendar/dist/github-calendar.min.js' %}"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'plugins/github-activity/github-activity-0.1.5.min.js' %}"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>        
+    <script type="text/javascript" src="{% static 'js/zoom.js' %}"></script> 
+</body>
+</html> 
+
